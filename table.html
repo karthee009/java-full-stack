@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table</title>
+    <style>
+        table{
+            background-color: aquamarine;
+        }
+        td{
+            text-align: center;
+            font-size: 20px;
+            font-weight: bold;
+            background-color: beige;
+        }
+        .block{
+            font-weight: bold;
+            font-size: 20px;
+        }
+        .flop{
+            font-size: 18px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">day 5 tables</h1>
+    <section>
+        <h1>blockbuster movies</h1>
+        <ol class="block">
+            <li>master</li>
+            <li>leo</li>
+            <li>goat</li>
+            <li>amaran</li>
+            <li>pathuthala</li>
+            <li>manaadu</li>
+            <li>vaathi</li>
+        </ol>
+        <h1>flop movies</h1>
+        <ul class="flop">
+            <li>rajini murugan</li>
+            <li>vedhalam</li>
+            <li>visvasamn</li>
+            <li>veeram</li>
+            <li>marudhu</li>
+            <li>maari</li>
+            <li>maari2</li>
+        </ul>
+    </section>
+<section>
+<table border="1" width="30%" align="center" cellpadding="10" cellspacing="5">
+    <tr>
+       <b><th colspan="4"  background="images/JD.jpeg" style="font-size: 40px;color: aliceblue;">MOVIE DETAILS</th></b> 
+    </tr>
+    <tr >
+        <td>sno</td><td>mname</td><td>actor</td><td>box office</td>
+    </tr>
+    <tr>
+        <td>01</td><td>jana nayagan</td><td>thalapathy</td><td>100000</td>
+    </tr>
+    <tr>
+        <td>02</td><td id="vikki">pudhupettai</td><td>dhanush</td><td>125000</td>
+    </tr>
+    <tr>
+        <td>03</td><td>maanadu</td><td>str</td><td>75000</td>
+    </tr>
+    <tr>
+        <td>04</td><td>remo</td><td>siva karthikeyan</td><td>50000</td>
+    </tr>
+    <tr>
+        <td>05</td><td>leo</td><td>thalapathy</td><td rowspan="2" >30000</td>
+    </tr>
+    <tr>
+        <td>06</td><td>amaran</td><td>siva karthikeyan</td>
+    </tr>
+</table>
+</section>
+</body>
+</html>
