@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <style>
+        #box{
+            width: 100px;
+            height: 200px;
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+   <p id="demo">welcome</p>
+   <p id="demo1">bye</p> 
+   <button onclick="handleclick()">thodraa pakkalam </button>
+   <button onclick="reset()">reset</button>
+<h2 onclick="maathu()" id="hd">welcome</h2>
+<p id="box"></p>
+<button id="btn">click</button>
+
+    <script>
+        function maathu(){
+            document.getElementById("hd").innerHTML=" thank you ";
+            document.getElementById("hd").style.backgroundColor="palegreen"
+        }
+
+let box = document.getElementById("box");
+
+box.addEventListener("mouseover", () => {
+    box.style.backgroundColor = "green";
+});
+
+box.addEventListener("mouseout", () => {
+    box.style.backgroundColor = "blue";
+});
+
+
+        const x=document.getElementById("demo");
+        document.getElementById("demo").innerHTML= x.innerHTML + " how are you"
+        const y=document.getElementById("demo1");
+        document.getElementById("demo1").innerHTML = y.innerHTML + " see you again "
+        document.getElementById("demo").innerHTML= " enna da venum unake  ";
+
+    function handleclick(){
+        document.getElementById("demo").innerHTML="poi velaya paara punda";
+        document.getElementById("demo").style.backgroundColor=
+        "palegreen";
+       
+    }
+    function reset(){
+         document.getElementById("demo").innerHTML="";
+    }
+
+
+    </script>
+</body>
+</html>

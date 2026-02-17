@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        // // task 1 
+        // let arr = [1, 2, 3, 2, 4, 1, 5];
+        // let unique = [...new Set(arr)]; 
+        // console.log(arr)
+        // console.log(unique);
+
+//       task 2
+
+//       let arr = [10, 5, 20, 8, 15];
+//       let largest = 0;
+//       let secondLargest = 0;
+
+// for (let i = 0; i < arr.length; i++) {
+//     if (arr[i] > largest) {
+//         secondLargest = largest;
+//         largest = arr[i];
+//     } else if (arr[i] > secondLargest && arr[i] !== largest) {
+//         secondLargest = arr[i];
+//     }
+// }
+
+// console.log(secondLargest);
+
+// // task 3 
+// let str1 = "listen";
+// let str2 = "silent";
+
+// let s1 = str1.split("").sort().join("");
+// let s2 = str2.split("").sort().join("");
+
+// if (s1 === s2) {
+//     console.log("Anagram");
+// } else {
+//     console.log("Not Anagram");
+// }
+
+// // task 5
+
+// const factorial = (n) => {
+//     if (n === 0 || n === 1) {
+//         return 1;
+//     }
+//     return n * factorial(n - 1);
+// };
+
+// console.log(factorial(5));
+
+// //task 6
+
+// let marks = [80, 75, 90, 85, 70];
+// let sum = 0;
+
+// for (let i = 0; i < marks.length; i++) {
+//     sum += marks[i];
+// }
+
+// let average = sum / marks.length;
+// console.log("Average =", average);
+
+// //task 7
+
+// let arr = [1, 2, 3, 5];
+// let n = 5;
+
+// let expectedSum = (n * (n + 1)) / 2;
+// let actualSum = 0;
+
+// for (let i = 0; i < arr.length; i++) {
+//     actualSum += arr[i];
+// }
+
+// console.log("Missing number =", expectedSum - actualSum);
+
+// //task 8 
+
+let sentence = "hello i am karthee";
+let words = sentence.split(" ");
+let longest = "";
+
+for (let i = 0; i < words.length; i++) {
+    if (words[i].length > longest.length) {
+        longest = words[i];
+    }
+}
+
+console.log(longest);
+
+// //task 4
+// let arr = [1, 2, 2, 3, 1, 4, 2];
+// let count = {};
+
+// for (let i = 0; i < arr.length; i++) {
+//     if (count[arr[i]]) {
+//         count[arr[i]]++;
+//     } else {
+//         count[arr[i]] = 1;
+//     }
+// }
+
+// console.log(count);
+
+
+
+    </script>
+</body>
+</html>

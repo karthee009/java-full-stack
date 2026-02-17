@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>
+
+    </p>
+
+    <script>
+        //arrow function
+    //     const add =(a,b) => {
+    //         return a+b
+    //     }
+    //     let result=add(50,20);
+    //     console.log(result);
+
+
+    //     //subraction
+
+    //     const sub=(a,b) => {
+    //         return a-b
+    //     }
+    //     let result1=sub(20,9);
+    //     console.log(result1);
+
+
+    // //multiplication
+
+    // const mul=()=>{
+    //     let a=10;
+    //     let b=5;
+    //     return a-b;
+    // }
+    // console.log(mul());
+
+
+    // const div=()=>{
+    //     let a=100;
+    //     let b=3;
+     
+    // console.log(Math.trunc(a/b));   
+    // }
+    // div();
+
+//     let n=prompt("enter a number")
+//     const oae=(n)=>{
+
+//         if(n %2==0){
+//             console.log(" even number ")
+//         }
+// else{
+//     console.log(" odd number ")
+// }
+//     }
+//     oae(n);
+
+
+    // const fact=()=>{
+    //     let n=5;
+    //     let f=1;
+    //     for(let i=1;i<=n;i++){
+    //         f = f * i;
+    //     }
+    //     console.log(f)
+    // }
+    // fact();
+
+    //prime numbers
+
+//    const prime=()=>{
+//     let n=5;
+//     let count=0;
+//     for(i=1;i<=n;i++){
+//         if(n % i==0){
+//             count++;
+//         }
+//     }
+//     if(count == 2){
+//         console.log(" prime number ")
+//     }
+//     else{
+//         console.log(" not prime number ")
+//     }
+//    }
+//    prime();
+
+//armstrong
+
+// const isArmstrong = (num) => {
+//   let temp = num;
+//   let sum = 0;
+
+//   while(num > 0){
+//     let digit = num % 10;
+//     sum = sum + (digit * digit * digit);
+//     num = Math.floor(num / 10);
+//   }
+
+//   if(sum === temp){
+//     return "Armstrong Number";
+//   } else {
+//     return "Not Armstrong Number";
+//   }
+// }
+
+// console.log(isArmstrong(153)); // Armstrong Number
+
+// //tables
+
+// const table = (n) => {
+//   for(let i = 1; i <= 10; i++){
+//     console.log(i + " x " + n + " = " + (i * n));
+//   }
+// }
+
+// table(5);
+
+
+// //sum 
+
+const sumOfDigits = (num) => {
+  let sum = 0;
+
+  while(num > 0){
+    let digit = num % 10;
+    sum = sum + digit;
+    num = Math.floor(num / 10);
+  }
+
+  return sum;
+}
+
+console.log(sumOfDigits(123)); // 6
+
+
+
+</script>
+</body>
+</html>

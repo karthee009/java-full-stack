@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 24</title>
+    <style>
+        #emt{
+            width: 150px;
+            height: 100px;
+            border: solid black;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="clickevent()">click me</button>
+    <button ondblclick="dblclk()">dbl click</button>
+     <div onmouseover="mouseover()" onmouseout="mouseout()" id="emt">
+  <p>Hover over me</p>
+</div>
+<input type="text" placeholder="enter a sentence" id="box" onkeyup="showtext()">
+<p id="result"></p>
+
+
+
+<input type="text" onkeydown="showChar(event)" placeholder="keydown">
+<p id="output"></p>
+
+
+     <script>
+        function clickevent(){
+            alert(" clicked once ")
+        } 
+       
+        function dblclk(){
+            alert(" clicked twice ")
+        }        
+function mouseover(){
+    const div=document.getElementById("emt");
+    div.style.backgroundColor="red";
+    div.style.fontFamily="verdana";
+    div.style.color="blue";
+}
+
+function mouseout(){
+    const div=document.getElementById("emt");
+    div.style.backgroundColor="";
+    div.style.fontFamily="verdana";
+    div.style.color="blue";
+}
+
+function showtext(){
+    let result=document.getElementById("box").value;
+    document.getElementById("result").innerHTML=result;
+}
+
+
+
+function showChar(e) {
+  document.getElementById("output").innerText = e.key;
+}
+
+
+
+
+    </script>
+
+    
+<h3>Task 1: Form Submit Event</h3>
+
+<form id="myForm">
+  <input type="text" id="name" placeholder="Enter name" required>
+  <button type="submit">Submit</button>
+</form>
+
+<p>Output: <span id="output"></span></p>
+
+<hr>
+
+
+<h3>Task 2: Change Event (Dropdown Color)</h3>
+
+<select id="color">
+  <option value="">Select Color</option>
+  <option value="lightblue">Blue</option>
+  <option value="lightgreen">Green</option>
+  <option value="lightcoral">Red</option>
+</select>
+
+<hr>
+
+
+
+<h3>Task 3: Focus & Blur Event</h3>
+
+<input type="text" id="box" placeholder="Click here">
+
+<hr>
+
+
+
+<h3>Task 4: Event Delegation</h3>
+
+<ul id="list">
+  <li>HTML</li>
+  <li>CSS</li>
+  <li>JavaScript</li>
+</ul> 
+
+<p id="demo"></p>
+
+
+<script>
+
+
+
+
+
+
+
+document.getElementById("myForm").addEventListener("submit", (e) => {
+  e.preventDefault();
+
+  const name = document.getElementById("name").value;
+  document.getElementById("output").innerText = name;
+});
+document.getElementById("color").addEventListener("change", (e) => {
+  document.body.style.backgroundColor = e.target.value;
+});
+const box = document.getElementById("box");
+
+box.addEventListener("focus", () => {
+  box.style.border = "3px solid green";
+});
+
+box.addEventListener("blur", () => {
+  box.style.border = "3px solid red";
+});
+document.getElementById("list").addEventListener("click", (e) => {
+  if (e.target.tagName === "LI") {
+    alert(e.target.innerText);
+  }
+});
+</script>
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

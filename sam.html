@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS practice</title>
+    <script src="script.js"></script>
+    <style>
+        button{
+            margin:10px;
+            padding:10px;
+            font-size:20px;
+        }
+        button:hover{
+            background-color: aquamarine;
+        }
+    </style>
+  
+</head>
+<body>
+    <!-- <p id="demo"></p>
+    <input type="search" placeholder=" search here "><button onclick="">submit</button> --> 
+    <p id="passage"></p>
+    <button onclick="passage()">down</button>
+    <button onclick="myFunction()">submit</button>
+  <button onclick="changecolor()">color</button>
+  <button onclick="reset()">reset</button>  
+      <script>
+        
+
+
+// // 1.task
+// let num=5;
+// let f=1;
+
+// for (let i = 1; i <= num; i++) {
+//   f=f*i;
+// }
+
+// console.log("Factorial:", f);
+
+// // using while
+// let num = 5;
+// let i = 1;
+// let fact = 1;
+
+// while (i <= num) {
+//   fact = fact * i;
+//   i++;
+// }
+
+// console.log("Factorial:", fact);
+
+// // using do while
+// let num = 5;
+// let i = 1;
+// let fact = 1;
+
+//  do{
+//   fact = fact * i;
+//   i++;
+// }while (i <= num)
+
+// console.log("Factorial:", fact);
+
+// 2.task
+// let num = 13;
+// let count = 0;
+
+// for (let i = 1; i <= num; i++) {
+//   if (num % i == 0) {
+//     count++;
+//   }
+// }
+
+// if (count == 2) {
+//   console.log(num + " is Prime");
+// } else {
+//   console.log(num + " is Not Prime");
+// }
+
+// using while
+// let num = 13;
+// let i = 1;
+// let count = 0;
+
+// while (i <= num) {
+//   if (num % i == 0) {
+//     count++;
+//   }
+//   i++;
+// }
+
+// if (count == 2) {
+//   console.log(num + " is Prime");
+// } else {
+//   console.log(num + " is Not Prime");
+// }
+
+// using do while
+// let num = 13;
+// let i = 1;
+// let count = 0;
+//  do{
+//   if (num % i == 0) {
+//     count++;
+//   }
+//   i++;
+// }while (i <= num)
+// if (count == 2) {
+//   console.log(num + " is Prime");
+// } else {
+//   console.log(num + " is Not Prime");
+// }
+
+
+//  prime num series
+// let prime="";
+
+// for(let i=1;i<=50;i++){
+//     let count=0;
+//     for(let j=1;j<=i;j++){
+//         if(i%j==0){
+//             count++;
+//         }
+//     }
+//     if(count==2){
+//         prime += i + " ";
+//     }
+// }
+// console.log(prime + " + ");
+
+          function passage(){
+     document.getElementById("passage").innerHTML = " poda mendalu pundamaney ";
+     document.getElementById("passage").style.color = "red";
+     document.getElementById("passage").style.backgroundColor = "blue";
+  }
+      function myFunction() {
+    document.getElementById("demo").innerHTML = " hello world ";  
+  }
+
+  function reset(){
+      document.getElementById("demo").innerHTML = "";
+      document.getElementById("passage").innerHTML = "";
+  }
+function changecolor(){
+     document.getElementById("demo").style.color = "red";
+     document.getElementById("demo").style.backgroundColor = "yellow";
+  } 
+
+
+
+
+
+
+
+
+ </script>
+
+
+
+
+<!-- 
+// let result="";
+// for(let i=1;i<=10;i++){
+
+//     if(i==10)
+//     result += i ;
+// else
+//    (result += i + " + ") ;
+// }
+// document.write(result);
+
+ let s="";
+ for(let i=0;i<=15;i+=2){
+     if(i==15){
+         s += i ;
+     }
+     else{
+         s += i + " + " +  i + " ! ";
+     }
+ }
+ console.log(s);
+
+// let s1=prompt(" enter a starting number ");
+// let e1=prompt(" enter a end number ");
+// let result="";
+// for(let i=s1;i<=e1;i++){
+
+// if(i%2 !==0){
+//     if(i==e1)
+//     result += i ;
+// else
+//    result += i + " + ";
+// }}
+// document.write(result);
+
+
+// function loop(){
+//     let result="";
+//     for(let i=1;i<=10;i++){
+//     result += i + " + "
+//     }
+//     console.log(result);
+// }
+// loop();
+
+
+// let sum=0;
+// for(let i=1;i<=5;i++){
+//     sum=sum + i;
+// }
+// console.log(" the sum is " + sum);
+
+// first i=1 sum=0+1=1
+//second i=2;sum=1 sum --> -->
+ 
+<!-- //   console.log("The number is Even");
+// } else {
+//   console.log("The number is Odd");
+// }
+
+    //      let name=prompt("entrr your name")
+    //      console.log(" hello " + name)
+
+//         let a = Number(prompt("Enter first number:"));
+
+// let b = Number(prompt("Enter second number:"));
+
+// console.log("Sum:", a + b);
+// console.log("Difference:", a - b);
+// console.log("Product:", a * b);
+
+// let bikes=10;
+// let cars=5;
+// let totalVehicles=bikes / cars;
+// console.log(" Remainder Total Vehicles: ", totalVehicles);
+// let totalVehicles=bikes % cars;
+// console.log(" Quotient Total Vehicles: ", totalVehicles);
+
+// //tast 2
+
+// let num=10;
+//  num += 5; //answer 15
+//  console.log(num);
+//  num -= 3; //answer 12
+//  console.log(num);
+// num *= 2;  //answer 24
+// console.log(num);
+// num /= 4;  //answer 6
+// console.log(num);
+//  num %= 4; //answer 2
+//  console.log(" final answwer of num is " + num);
+
+// // task 3
+// let a=10;
+// let b=20;
+// if(a===b){
+//     console.log(" a is equal to b")
+//  } else{
+//     console.log(" a is not equal to b")
+//  }
+//  if(a>b){
+//     console.log(" a is greater than b")
+//  } else {
+//     console.log(" b is greater than a")
+//  }
+//  if(a<b){
+//     console.log(" a is greater than b")
+//  } else {
+//     console.log(" b is greater than a")
+//  }
+
+// task 4
+
+// let movie=prompt(" enter your favourite movie");
+// let actor=prompt(" enter your favourite actore");
+
+// if(movie == "jananayagan" && actor == "vijay"){
+//     console.log(" you are absolute 100% anil ")
+// }
+// else{
+//     console.log(" you are not anil ")
+// }
+
+// let movie=prompt(" enter your favourite movie");
+// let actor=prompt(" enter your favourite actore");
+
+// if(movie == "jananayagan" || actor == "vijay"){
+//     console.log(" you are absolute 100% anil ")
+// }
+// else{
+//     console.log(" you are not anil ")
+// }
+
+// let isOnline = true;
+
+// if ( ! isOnline) {
+//   console.log("User is online ");
+// } else {
+//   console.log("User is offline ");
+// }
+
+// task 5
+
+// let money = 10000;
+
+// let result = (money >= 5000) ? "you're eligible to participate " : " you're Not eligible to participate";
+
+// console.log(result);
+
+// // task 7
+
+// let marks = Number(prompt("Enter your marks:"));
+
+// if (marks >= 90 && marks <= 100) {
+//     console.log("A");
+// }
+
+
+// if (marks >= 75 && marks <= 89) {
+//     console.log("B");
+// }
+
+
+// if (marks >= 50 && marks <= 74) {
+//     console.log("C");
+// }
+
+// if (marks >= 0 && marks < 50) {
+//     console.log("Fail");
+// }
+
+// task 8
+
+// let username="karthee";
+// let password="261104";
+
+// let inputUsername=prompt(" enter your username");
+// let inputPassword=prompt(" enter your password");
+
+// if(inputUsername === username && inputPassword === password){
+//     console.log(" login successful ");
+// } else {
+    // alert("login failed, incorrect username or password");   //here im using alert property
+// }
+
+// task 9
+
+// let units = Number(prompt("Enter units consumed:"));
+// let bill = 0;
+
+// if (units >= 0 && units <= 100) {
+//     bill = units * 5;
+// }
+
+// if (units >= 101 && units <= 200) {
+//     bill = units * 7;
+// }
+// if (units > 200) {
+//     bill = units * 10;
+// }
+// if (units < 0) {
+//     console.log("Invalid units");
+// } else {
+//     console.log("Total Electricity Bill: ₹" + bill);
+// }
+
+// let s=Number(prompt(" enter a number to print its table "));
+// for(let i=1;i<=10;i++){
+//     console.log(s + " x " + i + " = " + (s*i));
+// }
+
+// for(let i=1;i<=10;i+=2){
+//     console.log(i);
+// }
+
+// let s=Number(prompt(" enter a starting number "));
+// let e=Number(prompt("enter a end number"));
+
+// for(let i=e;i<=e;i++){
+//     if(i%e === 0){
+//         console.log(i);
+//     }
+// }
+
+
+
+
+
+
+// let result = "";
+
+// for (let i = 1; i <= 20; i++) {
+//   result += i + " ";
+// }
+
+// console.log(result);
+
+
+// let movie = "";
+
+// for(let i=1;i<=10;i++){
+//     movie +=  + i + " ";
+// }
+// console.log(movie);
+
+
+// for (let i = 1; i <= 20; i++) {
+//   document.write(i + " ");
+// }
+
+// for(let i=1;i<=100;i++){
+//     document.write(i + " " );
+// }
+
+
+// //  task 1
+// let actor="";
+//  for(let i=1;i<=20;i++){
+//     actor += i + " ";
+//  }
+// console.log(actor);
+
+// // task 2
+
+// let actor="";
+//  for(let i=1;i<=15;i+=2){
+//     actor += i + " ";
+//  }
+// console.log(actor);
+
+// // task 3
+
+// let phone = "";
+// for(let i=0;i<=20;i++){
+//     if(i % 2 == 0){
+//         phone += i + " ";
+//     }
+// }
+// console.log(phone);
+
+// // task 4
+
+// let sum="";
+
+// for(let i=0;i<=30;i+=5){
+//     sum += i + " ";
+// }
+// console.log(sum);
+ 
+// //  task 5
+
+// let sum="";
+// for(let i=1;i<=10;i++){
+//     sum+= i + " + ";
+// }
+//  console.log(sum);
+ 
+// //  task 6
+
+// let sum="";
+// for(let i=1;i<=20;i++){
+//     if(i % 2 == 0){
+//         sum += i + " + ";
+//     }
+// }
+//  console.log(sum);
+
+// // task 7
+
+// let result = "";
+
+// for (let i = 1; i <= 20; i += 2) {
+//   result += i + " ";
+// }
+
+// console.log(result);
+
+
+// task 8
+
+// let result="";
+
+// for(let i=0;i<=20;i+=5){
+//     result += i + " + "
+// }
+// console.log(result);
+ 
+ 
+//  let j=1;
+//  while(j<=5){
+//     console.log(j);
+//     j++;
+//  }
+ 
+//  let k=1;
+// do{
+//     console.log(k);
+//     k++;
+// }while(k<=5);
+
+
+// for(let i=1;i<=5;i++){
+//     for(let j=1;j<=5;j++){
+//         document.write(i + "x" + j + "=" + (i*j) + "<br>");
+//     }
+//     document.write("------------<br>");
+// }
+ 
+//  for(let i=1;i<=10;i++){
+//     console.log(i + "x" + "2" + "=" + (i*2));
+// }
+
+// console.log("---------------");
+
+// for(let i=1;i<=10;i++){
+//     console.log(i + "x" + 3 + "=" + (i*3));
+// }
+ 
+
+// let table=Number(prompt(" enter a number to print its table "));
+// for(let i=1;i<=10;i++){
+//     console.log(table + " x " + i + " = " + (table*i));
+// }
+
+
+// let result="";
+// for(let i=0;i<=30;i+=5){
+//     if(i==30)
+//     result += i ;
+// else
+//     result += i + " + ";
+
+// }
+//  console.log(result);
+
+// let sum="";
+
+// for(let i=2;i<=20;i++){
+//     if(i==20){
+//         sum += i;
+//     }
+//     else{
+//         sum += i + "+";
+//     }
+//     }
+//     console.log(sum);
+
+    // let sum1="";
+
+    // for(let i=1;i<=20;i+=2){
+    //     if(i<=20){
+    //         sum += i;
+    //     }
+    //     else{
+    //         sum1 += i + "+";
+    //     }
+    //     }
+    // console.log(sum1);
+
+
+
+
+
+  -->
+</body>
+</html>

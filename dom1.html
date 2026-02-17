@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document object model</title>
+    <style>
+        #emt{
+            width: 150px;
+            height: 200px;
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+
+    
+        <input type="text" placeholder="enter your name" id="name">
+        <input type="email" placeholder="enter your mail" id="mail">
+        <button type="submit" id="btn">submit</button>
+        <button type="reset" id="resetbtn">reset</button>
+        <p id="result"></p>
+  
+    <script>
+
+        btn.addEventListener("click",()=>{
+        const name=document.getElementById("name").value
+        const mail=document.getElementById("mail").value
+        const btn=document.getElementById("btn")
+        const reset=document.getElementById("reset")
+        const output=document.getElementById("result")
+
+        output.innerHTML = "name : " + name + "<br>email : " + mail;
+        })
+        const resetBtn = document.getElementById("resetbtn");
+
+resetBtn.addEventListener("click", () => {
+    document.getElementById("result").textContent = "";
+});
+
+
+        
+        
+    </script>
+    <!-- <p id="demo" onclick="showmessage()">how are you</p>
+    <div id="emt" onmouseover="changecolor()" onmouseout="resetcolor()"> -->
+
+      <!-- <p id="para">this is paragraph</p>
+      <p id="result" ></p> -->
+
+        <!-- <h1 id="count">0</h1>
+        <button id="btn">click</button>
+        <br>
+        <hr> -->
+
+        <!-- <input type="text" placeholder="enter any word" id="input">
+        <button id="show">click</button> -->
+        <!-- <button id="toggle">hide</button>
+        <p id="text">this is text</p>
+    </div> -->
+    <script>
+        // const text=document.getElementById("input")
+        // const btnn=document.getElementById("show")
+        // const result=document.getElementById("result")
+        // const reset=document.getElementById("reset")
+        // btnn.addEventListener("click",()=>{
+        //     result.textContent=text.value
+        // })
+
+        // reset.addEventListener("click",()=>{
+        //     result.textContent="";
+        //     text.textContent="";
+        // })
+
+//         const text = document.getElementById("text");
+//         const toggle = document.getElementById("toggle");
+
+// toggle.addEventListener("click", () => {
+//     if (text.style.display === "none") {
+//         text.style.display = "block";
+//         toggle.textContent = "Hide";
+//     } else {
+//         text.style.display = "none";
+//         toggle.textContent = "Show";
+//     }
+// });
+
+
+//         let count=0;
+//         const btn=document.getElementById("btn");
+//         const display=document.getElementById("count");
+
+//         btn.addEventListener("click",()=>{
+//             count++;
+//             display.textContent = count;
+//         })
+
+
+
+
+
+
+
+
+
+
+//         function showtext(){
+//             const message = document.getElementById("result");
+//             message.innerHTML= " onnum illa polam "
+//         }
+        
+
+// function hidetext(){
+//     const message = document.getElementById("result");
+//     message.innerHTML = "";
+// }
+
+
+        // const show=document.getElementById("para")
+        // const result=document.getElementById("result")
+
+        // show.addEventListener("mouseover",()=>{
+        //     result.textContent = " onnume panna mudiyadhu "
+        // });
+
+        // show.addEventListener("mouseout",()=>{
+        //     result.textContent = "";
+        // })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        // function showmessage(){
+        // const message = document.getElementById("demo")
+        // message.innerHTML="im fine"
+        // message.style.fontFamily="verdana"
+        // message.style.fontSize="100px"
+        // // message.style.backgroundColor="blue"
+        // // message.style.color="white"
+        // }
+
+        // const changed=document.getElementById("emt")
+        // changed.addEventListener("mouseover",()=>{
+        //     changed.style.backgroundColor="blue"
+        // })
+        // changed.addEventListener("mouseout",()=>{
+        //     changed.style.backgroundColor="red"
+        // })
+    </script>
+</body>
+</html>

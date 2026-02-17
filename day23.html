@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body> 
+    <!-- task 1 -->
+    <p id="para">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam eveniet reprehenderit repudiandae debitis numquam deleniti. Esse magnam illum facilis ratione impedit cupiditate nam voluptatum, voluptas rem non officiis a corporis.</p>
+    <button onclick="changeText()">Click</button>
+
+
+   <!-- task 2  -->
+    <div id="box" style="width:100px; height:100px; border:1px solid black;"></div>
+    <button onclick="changeColor()">Change Color</button>
+       
+    <!-- task 3  -->
+    <p id="text">This is a paragraph</p>
+    <button onclick="hideText()">Hide</button>
+    <button onclick="showText()">Show</button>
+
+    <!-- task 4 -->
+    <img id="img" src="./images/1210824.jpg" width="150">
+    <button onclick="changeImage()">Change Image</button>
+  
+    <!-- task 5 -->
+    <input type="text" id="inputText">
+    <button onclick="displayText()">Show</button>
+    <p id="output"></p>
+    
+    <!-- task 6 -->
+    <p id="msg">Old Text</p>
+    <button onclick="updateText()">Update</button>
+
+    <!-- /task 7 -->
+    <h2 id="heading">Hello</h2>
+    <button onclick="changeStyle()">Change Style</button>
+<!-- task 8 -->
+    <p id="para1">Lorem ipsum dolor sit amet.</p>
+    <button onclick="changeContent()">Change</button>
+    
+    <!-- task 9 -->
+    <p id="textStyle">welcome to fight club</p>
+    <button onclick="styleText()">Apply Style</button>
+    
+
+
+
+
+
+
+    <script>
+    function changeText() {
+        document.getElementById("para").innerText = "Text Changed!";
+    }
+    function changeColor() {
+    document.getElementById("box").style.backgroundColor = "blue";
+}
+
+function hideText() {
+    document.getElementById("text").style.display = "none";
+}
+
+function showText() {
+    document.getElementById("text").style.display = "block";
+}
+function changeImage() {
+    document.getElementById("img").src = "/day 23/0f9f7651-2b61-4838-ac7b-f8b8c5f78f71.jpeg";
+}
+function displayText() {
+    let values = document.getElementById("inputText").value;
+    document.getElementById("output").innerText = values;
+}
+function updateText() {
+    document.getElementById("msg").innerHTML = "New Text";
+}
+function changeStyle() {
+    document.getElementById("heading").style.color = "blue";
+}
+function changeContent() {
+    document.getElementById("para1").innerText = "Content";
+}
+function styleText() {
+    let p = document.getElementById("textStyle");
+    p.style.color = "green";
+    p.style.fontSize = "24px";
+}
+
+
+    </script>
+</body>

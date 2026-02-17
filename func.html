@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    //   //task 1 
+    // //    non - paramitarized function
+    //     let n = 5;
+    //     let fact = 1;
+    //     function Factorial(){
+    //     for (let i = 1; i <= n; i++) {
+    //      fact = fact * i;
+    //         }
+    //     console.log(fact);
+    //     }
+    //     Factorial();
+
+        // // paramitarized function 
+        // let n = parseInt(prompt("enter your number : "));
+        // let fact = 1;
+        // function Factorial(number){
+        // for (let i = 1; i <= number; i++) {
+        //  fact = fact * i;
+        //     }
+        // console.log(fact);
+        // }
+        // Factorial(n);
+
+    //     //return type function
+    //     let n = parseInt(prompt("enter your number : "));
+    //     function Factorial(number){
+    //     let fact = 1;
+    //     for (let i = 1; i <= number; i++) {
+    //      fact = fact * i;
+    //         }
+    //      return fact;
+    //     }
+
+    //     // let result = Factorial(n);
+    //   //  console.log("Factorial is:", result);
+    //   console.log(Factorial(n));
+          
+         //task 2
+
+    //     function primeOrNot(){
+    //     let num = 7;
+    //     let isPrime = true;
+    //     if (num <= 1) isPrime = false;
+    //     for (let i = 2; i < num; i++) {
+    //      if (num % i === 0) {
+    //       isPrime = false;
+    //            break;
+    //      }
+    // }
+    //     console.log(isPrime ? "Prime" : "Not Prime");
+    //      }
+    //    primeOrNot();
+    //    primeOrNot();
+
+     // paramitarized function 
+    //  let num = parseInt(prompt("enter the number : "));
+    //      function primeOrNot(number){
+    //     let isPrime = true;
+    //     if (num <= 1) isPrime = false;
+    //     for (let i = 2; i < num; i++) {
+    //      if (num % i === 0) {
+    //       isPrime = false;
+    //            break;
+    //      }
+    // }
+    //     console.log(isPrime ? "Prime" : "Not Prime");
+    //      }
+
+    //    primeOrNot(num);
+
+    //return type
+//      let num = parseInt(prompt("enter the number : "));
+//          function primeOrNot(number){
+//         let isPrime = true;
+//         if (num <= 1) isPrime = false;
+//         for (let i = 2; i < num; i++) {
+//          if (num % i === 0) {
+//           isPrime = false;
+//                break;
+//          }
+//     }
+//        return isPrime ? "Prime" : "Not Prime";
+//          }
+      
+//   let result = primeOrNot(num);
+//   console.log(result);
+
+       // task 3 
+
+       //non paramitarized function
+    //    function primeseries(){
+    //     for (let n = 2; n <= 50; n++) {
+    //      let prime = true;
+    //     for (let i = 2; i < n; i++) {
+    //          if (n % i === 0) {
+    //           prime = false;
+    //             break;
+    //             }
+    //         }
+    //      if (prime){
+    //          console.log(n);
+    //      }
+    //         }
+    //     }
+
+    //     primeseries();
+
+    // paramitaried function
+//     let n = parseInt(prompt("Enter the number:"));
+//     function primeSeries(num) {
+//     let i = 2;   
+//     while (i <= num) {
+//         let isPrime = true;
+//         for (let j = 2; j < i; j++) {
+//             if (i % j === 0) {
+//                 isPrime = false;
+//                 break;
+//             }
+//         }
+//         if (isPrime) {
+//             console.log(i);
+//         }
+//         i++;
+//     }
+// }
+// primeSeries(n);
+  
+              //task 4
+         
+              // with parameter
+        //     let n = 153;
+        //     function amstrong(num){
+        //     let temp = num;
+        //     let sum = 0;
+
+        //     while (temp > 0) {
+        //     let digit = temp % 10;
+        //     sum += digit * digit * digit;
+        //     temp = Math.floor(temp / 10);
+        //     }
+
+        //     console.log(sum === num ? "Armstrong" : "Not Armstrong");
+        // }
+
+        // amstrong(n)
+
+
+          //task 5 
+        //   function amStrongSeries(){
+
+        //       for (let n = 1; n <= 1000; n++) {
+        //       let temp = n;
+        //       let sum = 0;
+
+        //       while (temp > 0) {
+        //         let d = temp % 10;
+        //         sum += d * d * d;
+        //         temp = Math.floor(temp / 10);
+        //       }
+
+        //       if (sum === n){
+        //          console.log(n);
+        //     }
+        //       }
+        //     }
+
+        //     amStrongSeries();
+
+          //task 6 
+        //   function fibbo(){
+        //         let a = 0, b = 1;
+        //         console.log(a);
+        //         console.log(b);
+
+        //         for (let i = 3; i <= 10; i++) {
+        //         let c = a + b;
+        //         console.log(c);
+        //         a = b;
+        //         b = c;
+        //         }
+        //     }
+
+        //     letanswer = fibbo();
+
+        // //   task 7 
+        //     function table(){
+        //         let n = 5;
+        //         for (let i = 1; i <= 10; i++) {
+        //         console.log(i + " * " + n + " = " + (i * n));
+        //         }
+        //     }
+
+        //     table();
+ 
+
+              //task 8
+              let n = parseInt(prompt("enter the number"));
+
+              function sum(n){
+                let sum = 0;
+                while (n > 0) {
+                sum += n % 10;
+                n = Math.floor(n / 10);
+                }
+                console.log("Sum of digits:", sum);
+            }
+
+            sum(n);
+
+
+
+
+
+
+
+
+</script>
+    
+</body>
+</html>

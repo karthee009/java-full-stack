@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="loop.js" defer></script>
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+//     //   factorial number
+//     let n = 5;
+// let fact = 1;
+
+// for(let i = 1; i <= n; i++){
+//   fact *= i;
+// }
+
+// console.log("Factorial:", fact);
+
+// // using while
+// let n = 5;
+// let i = 1;
+// let fact = 1;
+
+// while(i <= n){
+//   fact *= i;
+//   i++;
+// }
+
+// console.log("Factorial:", fact);
+
+// using do while
+// let n = 5;
+// let i = 1;
+// let fact = 1;
+
+// do{
+//   fact *= i;
+//   i++;
+// }while(i <= n);
+
+// console.log("Factorial:", fact);
+
+
+
+// prime number
+
+// let num = 7;
+// let count = 0;
+
+// for(let i = 1; i <= num; i++){
+//   if(num % i === 0){
+//     count++;
+//   }
+// }
+
+// if(count === 2){
+//   console.log("Prime number");
+// }else{
+//   console.log("Not a prime number");
+// }
+
+// using while
+// let num = 7;
+// let i = 1, count = 0;
+
+// while(i <= num){
+//   if(num % i === 0){
+//     count++;
+//   }
+//   i++;
+// }
+
+// console.log("prime");
+
+// // using do while
+// let num = 7;
+// let i = 1, count = 0;
+
+// do{
+//   if(num % i === 0){
+//     count++;
+//   }
+//   i++;
+// }while(i <= num);
+
+// console.log("prime");
+
+// // prime series
+// for(let i = 2; i <= 50; i++){
+//   let count = 0;
+
+//   for(let j = 1; j <= i; j++){
+//     if(i % j === 0){
+//       count++;
+//     }
+//   }
+
+//   if(count === 2){
+//     console.log(i);
+//   }
+// }
+
+// armstrong
+// let num = 153;
+// let temp = num;
+// let sum = 0;
+
+// for(; temp > 0; temp = Math.floor(temp / 10)){
+//   let digit = temp % 10;
+//   sum += digit ** 3;
+// }
+
+// console.log(sum === num ? "Armstrong" : "Not Armstrong");
+
+
+// while
+// let num = 153;
+// let temp = num;
+// let sum = 0;
+
+// while(temp > 0){
+//   let digit = temp % 10;
+//   sum += digit ** 3;
+//   temp = Math.floor(temp / 10);
+// }
+
+// console.log(sum === num ? "Armstrong" : "Not Armstrong");
+
+
+
+// 5 tables
+// for(let i = 1; i <= 10; i++){
+//   console.log("5 x " + i + " = " + (5 * i));
+// }
+
+// // sum of digit
+
+let num = 1234;
+let sum = 0;
+
+while(num > 0){
+  sum = sum + (num % 10);
+  num = parseInt(num / 10);
+}
+
+console.log("Sum of digits:", sum);
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>
