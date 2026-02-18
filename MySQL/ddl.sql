@@ -128,7 +128,13 @@ update customer_details set purchasing_amount = 7999 where customer_id=306;
 drop table product_details;
 
 
+
+
+
+-- day 3 
+
 -- operators in mysql
+
 
 -- assignment operator
 select salary + 1000 from employee;
