@@ -183,17 +183,101 @@
 // console.log(printName(student));
 
 
-function print(){
-    for(let i=10;i>=1;i--){
-        console.log(i)
-    }
-}
-print()
+// function print(){
+//     for(let i=10;i>=1;i--){
+//         console.log(i)
+//     }
+// }
+// print()
 
-function fact(){
+// function fact(){
     
-}
+// }
 
+
+        // class student{
+        //     constructor(name,age){
+        //         this.name=name;
+        //         this.age=age;
+        //     }
+        //     greet(){
+        //        console.log("  my name is " + this.name )
+        //     }
+        // }
+        // const s = new student("karthee",21)
+        // s.greet();
+
+
+        // console.log(s.name + s.age)
+
+
+        // class movie{
+        //     constructor(actor,moviename){
+        //      this.actor=actor;
+        //      this.moviename=moviename;
+        //     }
+        //     movieshow(){
+        //         console.log(" movie actor " + this.actor + "\n movie name " + this.moviename)
+        //     }
+        // }
+        // const m = new movie("thalapathy","jananayagan");
+        // m.movieshow();
+
+
+        // class Animal{
+        //     speak(){
+        //         console.log(" make noise ")
+        //     }
+        // }  
+        // class Dog extends Animal{
+        //     speak(){
+        //         console.log(" hello ")
+        //     }
+        // }
+        // const dog = new Dog();
+        // dog.speak();
+
+
+        // class Employee{
+        //         constructor(name,salary){
+        //             this.name=name;
+        //             this.salary=salary;
+        //         }
+        //         getdetails(){
+        //             console.log(this.name + this.salary)
+        //         }
+        //     }
+
+        //     class Manager extends Employee{
+        //         constructor(department){
+                    
+        //         super();
+        //             this.department=department;
+                    
+        //         }
+        //         getdetails(){
+        //             console.log(this.department+this.name+this.salary);
+        //         }
+        //     }
+            
+        //     const m = new Manager();
+        //     const e = new Employee("karthee",30000); 
+        //     e.getdetails();
+
+        class Shape{
+            constructor(a){
+                this.a=a;
+            }
+        }
+        class Square extends Shape{
+            area(){
+                console.log(this.a * this.a);
+            }
+        }
+
+        const square = new Square(7);
+        square.area();
+        
 
     </script>
 </body>
