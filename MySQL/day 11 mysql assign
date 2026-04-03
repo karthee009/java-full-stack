@@ -1,0 +1,111 @@
+CREATE TABLE Customers (
+CustomerID INT AUTO_INCREMENT PRIMARY KEY,
+FirstName VARCHAR(50),
+LastName VARCHAR(50),
+Email VARCHAR(100),
+Phone VARCHAR(15),
+City VARCHAR(50),
+Address VARCHAR(150),
+RegisterDate DATE
+);
+
+DELIMITER //
+
+-- Question 1: Create a stored procedure to add a new customer.
+CREATE PROCEDURE AddCustomers1(
+IN fname VARCHAR(50),
+IN lname VARCHAR(50),
+IN email VARCHAR(100),
+IN phone VARCHAR(15),
+IN city VARCHAR(50),
+IN addr VARCHAR(150),
+IN regdate DATE
+)
+BEGIN
+INSERT INTO Customers
+(FirstName, LastName, Email, Phone, City, Address, RegisterDate)
+VALUES
+(fname, lname, email, phone, city, addr, regdate);
+END //
+
+-- Question 2: Create a stored procedure to retrieve customer details by CustomerID.
+CREATE PROCEDURE GetCustomerByID(IN cid INT)
+BEGIN
+SELECT * FROM Customers
+WHERE CustomerID = cid;
+END //
+
+-- Question 3: Create a stored procedure to update a customer's email and phone number.
+CREATE PROCEDURE UpdateContact(
+IN cid INT,
+IN newEmail VARCHAR(100),
+IN newPhone VARCHAR(15)
+)
+BEGIN
+UPDATE Customers
+SET Email = newEmail,
+Phone = newPhone
+WHERE CustomerID = cid;
+END //
+
+-- Question 4: Create a stored procedure to get all customers from a specific city.
+CREATE PROCEDURE GetCustomersByCity(IN cityname VARCHAR(50))
+BEGIN
+SELECT * FROM Customers
+WHERE City = cityname;
+END //
+
+-- Question 5: Create a stored procedure to delete a customer by CustomerID.
+CREATE PROCEDURE DeleteCustomer(IN cid INT)
+BEGIN
+DELETE FROM Customers
+WHERE CustomerID = cid;
+END //
+
+-- Question 6: Create a stored procedure to list customers registered within a given date range.
+CREATE PROCEDURE CustomersByDateRange(
+IN startDate DATE,
+IN endDate DATE
+)
+BEGIN
+SELECT *
+FROM Customers
+WHERE RegisterDate BETWEEN startDate AND endDate;
+END //
+
+-- Question 7: Create a stored procedure to search for customers by partial FirstName or LastName.
+CREATE PROCEDURE SearchCustomer(IN keyword VARCHAR(50))
+BEGIN
+SELECT *
+FROM Customers
+WHERE FirstName LIKE CONCAT('%', keyword, '%')
+OR LastName LIKE CONCAT('%', keyword, '%');
+END //
+
+-- Question 8: Create a stored procedure to update a customer's entire address.
+CREATE PROCEDURE UpdateAddress(
+IN cid INT,
+IN newAddress VARCHAR(150)
+)
+BEGIN
+UPDATE Customers
+SET Address = newAddress
+WHERE CustomerID = cid;
+END //
+
+-- Question 9: Create a stored procedure that returns the total number of customers.
+CREATE PROCEDURE TotalCustomers()
+BEGIN
+SELECT COUNT(*) AS TotalCustomers
+FROM Customers;
+END //
+
+-- Question 10: Create a stored procedure to retrieve customers who have not provided an email address.
+CREATE PROCEDURE CustomersWithoutEmail()
+BEGIN
+SELECT *
+FROM Customers
+WHERE Email IS NULL OR Email = '';
+END //
+
+DELIMITER ;
